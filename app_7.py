@@ -98,7 +98,7 @@ async def main():
                 max_price = current_price
                 max_price_timestamp = product_info['timestamp']
             else:
-                message = f"O maior preço registrado é {max_price} em {max_price_timestamp}"
+                message = f"O preço ainda não alterou ... aguarde mais um pouco: {max_price} em {max_price_timestamp}"
                 print(message)
                 await send_telegram_message(message)
 
